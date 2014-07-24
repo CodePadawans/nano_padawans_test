@@ -1,5 +1,5 @@
 class Monster
-  
+
   attr_reader :name
 
   def initialize(name)
@@ -10,5 +10,3 @@ class Monster
    "#{@name} ate #{food}"
   end
 end
-
-
