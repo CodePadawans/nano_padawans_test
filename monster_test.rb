@@ -1,4 +1,4 @@
-require_relative 'monster_class'
+require_relative 'monster'
 
 class MonsterTest < Test
   def eat_test
@@ -8,8 +8,4 @@ class MonsterTest < Test
     expected = "Elza ate meat"
     assert(expected, eaten)
   end
-
-m = MonsterTest.new
-p m.run
-t = Test.new
 end

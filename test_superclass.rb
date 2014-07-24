@@ -27,11 +27,16 @@ class Test
     # collect all inherited classes to run them later
   end
 
-#  def self.run_all_tests
-#    # run all of them
-#    @test.run
-#  end
-
+  def self.run_all_tests
+   # run all of them
+     puts @tests.to_s
+    @tests.each do |test_class|
+    t = test_class.new
+    t.run
+    end
+  end
 end
 
 require_relative 'monster_test'
+Test.run_all_tests
+
