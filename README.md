@@ -4,11 +4,11 @@ nano_padawans_test
 Our second project by RGSoC is to develop a tool for documentation testing. Therefore, we want to learn first about testing and the already existing tools.
 A challenge for us here is to write a mini test framework, to understand what happens behind the scenes of an actual TF.
 
-##### Elza - a monster that eats meat
+#### Elza - a monster that eats meat
 We created a `class Monster` and a method `eat`. Therefore a `MonsterTest class` has a method `eat_test`.
 There is also a `superclass Test`, that `MonsterTest` inherits from. 
 
-###### class `Test` methods
+#### class `Test` methods
 `run` calls all methods ending on _test
 `assert` that take 3 arguments `(expected, actual, msg = "")`
 - raises an exception if expected is not actual
