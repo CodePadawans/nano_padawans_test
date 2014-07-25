@@ -11,11 +11,7 @@ There is also a `superclass Test`, that `MonsterTest` inherits from.
 #### class `Test` methods
 `run` calls all methods ending on _test
 
-`assert` takes 3 arguments `(expected, actual, msg = "")`
-
-raises an exception if expected is not actual
-
-returns otherwise
+`assert` takes 3 arguments `(expected, actual, msg = "")`, it raises an exception, if expected is not actual and returns a `victory` message otherwise
 
 `self.inherited(subclass)` collects all inherited classes
 
@@ -23,4 +19,5 @@ returns otherwise
 
 
 At the end, you need to call `Test.run_all_tests` and **BOOM!!** all the test for all the classes run at a very high speed.
+
 Elza ate meat. 
