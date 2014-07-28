@@ -3,8 +3,8 @@ class Test
     # calls all methods ending on _test
     symbols = self.methods
     strings = symbols.map { |s| s.to_s }
-    blah = strings.select { |m| m.include? "_test"}
-    blah.each do |methods|
+    all_testmethods = strings.select { |m| m.include? "_test"}
+    all_testmethods.each do |methods|
       self.send(methods)
     end
   end
