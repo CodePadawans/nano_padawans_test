@@ -1,6 +1,6 @@
 require_relative 'monster'
 
-class MonsterTest < Test
+class Monster_Test < Test
   def eat_test
     @elza = Monster.new("Elza")
     eaten = @elza.eat("meat")

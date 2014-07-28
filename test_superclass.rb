@@ -1,4 +1,4 @@
-class Test
+class Test_Superclass
   def run
     # calls all methods ending on _test
     symbols = self.methods
@@ -39,4 +39,3 @@ end
 
 require_relative 'monster_test'
 Test.run_all_tests
-
