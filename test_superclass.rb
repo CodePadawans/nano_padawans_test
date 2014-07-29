@@ -1,8 +1,8 @@
-class Test_Superclass
+class TestSuperclass
   def run
     # calls all methods ending on _test
     symbols = self.methods
-    strings = symbols.map { |s| s.to_s }
+    strings = symbols.map(&:to_s)
     all_testmethods = strings.select { |m| m.include? "_test"}
     all_testmethods.each do |methods|
       self.send(methods)
@@ -38,4 +38,4 @@ class Test_Superclass
 end
 
 require_relative 'monster_test'
-Test.run_all_tests
+TestSuperclass.run_all_tests
