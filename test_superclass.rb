@@ -1,4 +1,4 @@
-class Test_Superclass
+class Test
   def run
     # calls all methods ending on _test
     symbols = self.methods
